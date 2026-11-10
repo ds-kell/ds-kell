@@ -7,7 +7,7 @@ Ba app nhỏ, miễn phí, giải quyết các phiền toái hằng ngày. Khôn
 
 | App | What it does | Platform | Download |
 |---|---|---|---|
-| 🔔 [HyperNotifyFix](#-hypernotifyfix--fix-delayed-notifications-on-xiaomi-hyperos--miui) | Fix late / missing notifications on Xiaomi, Redmi, POCO (HyperOS, MIUI). No root. | Android | [APK](https://github.com/ds-kell/fix-noti-xiaomi/releases/latest) |
+| 🔔 [HyperNotifyFix](#-hypernotifyfix--fix-delayed-notifications-on-xiaomi-hyperos--miui) | Fix late / missing notifications on Xiaomi, Redmi, POCO (HyperOS, MIUI) and put Gemini, ChatGPT or Claude on the power button. No root. | Android | [APK](https://github.com/ds-kell/fix-noti-xiaomi/releases/latest) |
 | 🔄 [ConvertApp](#-convertapp--free-offline-file-converter) | Convert images, PDF, Word, Excel, PowerPoint, Markdown, HTML offline, in bulk. | Windows · macOS · Linux | [Installers](https://github.com/ds-kell/convert-multi-file/releases/latest) |
 | 🖱️ [Kell Auto Clicker](#️-kell-auto-clicker--auto-clicker--macro-recorder) | Record mouse & keyboard once, replay automatically. | Windows · macOS · Linux | [Downloads](https://github.com/ds-kell/kell-auto-clicker/releases/latest) |
 
@@ -18,6 +18,7 @@ Ba app nhỏ, miễn phí, giải quyết các phiền toái hằng ngày. Khôn
 **Zalo, Messenger, Gmail, Telegram, WhatsApp notifications arriving late, or only when you open the app?** Xiaomi HyperOS aggressively freezes apps and Google Play Services in the background to save battery. HyperNotifyFix checks what is blocking your notifications and fixes it, **without root**, through [Shizuku](https://shizuku.rikka.app/).
 
 - Doze / battery-optimization whitelist, background-run permission, Xiaomi MILLET & low-latency whitelists, MiPush, FCM (Google push) reconnect.
+- **AI assistant on the power button:** replace Xiao AI with Gemini, ChatGPT, Claude or any installed assistant, and keep it after reboots (HyperOS China ROMs reset it on every boot). Switch back to Xiao AI any time.
 - Every change is **previewed, backed up and reversible**. Dry Run is on by default.
 - Keeps fixes alive after reboot and after HyperOS rewrites them.
 - Tested on Xiaomi 15 Ultra (HyperOS 3). Other Xiaomi / Redmi / POCO phones on HyperOS or MIUI (Android 8+) should work; please report results.
@@ -28,6 +29,7 @@ Ba app nhỏ, miễn phí, giải quyết các phiền toái hằng ngày. Khôn
 3. Turn on Developer options: *Settings → About phone →* tap **OS version** 7 times. Then *Additional settings → Developer options →* enable **Wireless debugging** (Wi-Fi must be on).
 4. Open Shizuku → **Start via Wireless debugging** → pair with the code shown in Wireless debugging → **Start**.
 5. Open HyperNotifyFix → allow Shizuku → pick the apps whose notifications are late → **Run diagnostics** → review → turn off Dry Run → **Apply**.
+   - AI assistant: Settings tab → **Trợ lý AI cho nút nguồn** (AI assistant for the power key) card → pick an app → **Apply**. After this first setup you can switch assistants without Shizuku.
 6. After a reboot, start Shizuku again only if HyperNotifyFix asks for it.
 
 > Battery use may rise slightly. No app can guarantee instant notifications: the sender's server and your network matter too.
@@ -76,7 +78,7 @@ Images, Markdown and HTML work out of the box. For Word/PDF/Office the app shows
 
 ## 🇻🇳 Tiếng Việt
 
-**HyperNotifyFix – sửa thông báo bị trễ trên Xiaomi.** Thông báo Zalo, Messenger, Gmail… đến muộn hoặc chỉ hiện khi mở app trên Xiaomi, Redmi, POCO (HyperOS, MIUI)? HyperOS chặn app chạy nền để tiết kiệm pin. App này kiểm tra và gỡ các giới hạn đó, **không cần root**, mọi thay đổi đều sao lưu và hoàn tác được.
+**HyperNotifyFix – sửa thông báo bị trễ trên Xiaomi.** Thông báo Zalo, Messenger, Gmail… đến muộn hoặc chỉ hiện khi mở app trên Xiaomi, Redmi, POCO (HyperOS, MIUI)? HyperOS chặn app chạy nền để tiết kiệm pin. App này kiểm tra và gỡ các giới hạn đó, **không cần root**, mọi thay đổi đều sao lưu và hoàn tác được. Ngoài ra còn **đổi trợ lý AI khi giữ nút nguồn** từ Xiao AI sang Gemini, ChatGPT, Claude… và tự giữ sau mỗi lần khởi động lại (thẻ *Trợ lý AI cho nút nguồn* trong Cài đặt → chọn app → **Áp dụng**).
 Cài đặt: tải file APK ở [Releases](https://github.com/ds-kell/fix-noti-xiaomi/releases/latest) → cài [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) → bật Tùy chọn nhà phát triển (bấm 7 lần vào *Phiên bản HĐH* trong *Giới thiệu điện thoại*) → bật **Gỡ lỗi không dây** → mở Shizuku, ghép nối và **Bắt đầu** → mở HyperNotifyFix, chọn app bị trễ thông báo → **Chẩn đoán** → tắt Dry Run → **Áp dụng**.
 
 **ConvertApp – chuyển đổi file miễn phí, không cần mạng.** Đổi ảnh PNG/JPG/WebP/SVG, gộp ảnh thành PDF, Word ↔ PDF, Excel/PowerPoint → PDF, Markdown ↔ HTML, hàng loạt file một lúc, không tải file lên web nào. Trên Windows chỉ cần chuột phải vào file → **Chuyển sang ▸**.
